@@ -1,0 +1,30 @@
+<html>
+<head>
+
+<title>Login paget</title>
+</head>
+<script type="text/javascript">
+function display(form){
+if (form.username.value=="mr.struik") { 
+		if (form.password.value=="root") {              
+										location="second.html" 
+											} else {
+													alert("Invalid Password")
+													}
+								} else {  alert("Invalid Username")
+										}
+						}
+			</script>			
+<body >
+
+<form >
+<p class="warn">Username</p>    
+<input type="text" name="username" id="login"/><br><br>
+<p class="warn">Password</p>    
+<input type="password" name="password" id="pas"/><br><br>
+<input id="Submit" type="button" value="Login" onClick="display(this.form)"/>
+
+</form>
+
+</body>
+</html>
